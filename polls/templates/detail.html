@@ -1,0 +1,12 @@
+{% extends 'base.html' %}
+
+{% block head %}
+  this is the details page
+{% endblock %}
+
+{% block  body %}
+  {{ question.question_text }} <br />
+  {% for choice in question.choice.all %}
+  {{ choice.choice_text }} | votes: {{ choice.votes }}
+  {% endfor %}
+{% endblock %}

@@ -6,3 +6,8 @@ class QuestionModelForm(ModelForm):
     class Meta:
         model = Question
         exclude = ['id']
+
+class AskForm(ModelForm):
+    class Meta:
+        model = Question
+        exclude = ['id']

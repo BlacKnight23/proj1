@@ -4,9 +4,9 @@
   this is the details page
 {% endblock %}
 
-{% block  body %}
+{% block body %}
   {{ question.question_text }} <br />
   {% for choice in question.choice.all %}
-  {{ choice.choice_text }} | votes: {{ choice.votes }}
+    {{ choice.choice_text }} | votes: {{ choice.votes }}
   {% endfor %}
 {% endblock %}

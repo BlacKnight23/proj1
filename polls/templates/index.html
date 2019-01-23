@@ -6,9 +6,9 @@
   {% block body %}
   <ol>
     {% for question in questions %}
-    <li>
-      <a href="{% url 'polls:detail' question.id %}">Question: {{ question.question_text }} </a><br />
-    </li>
+      <li>
+        <a href="{% url 'polls:detail' question.id %}">Question: {{ question.question_text }} </a><br />
+      </li>
     {% endfor %}
     </ol>
   {% endblock %}
